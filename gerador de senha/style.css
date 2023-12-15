@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap');
+:root{
+    --cor1: #7AC7E6;
+    --cor2: #7AA5E6;
+    --cor3: #947AE6;
+    --cor4: #523d97;
+    --cor5:#2a33b4;
+    --cor6: #7ac7e673;
+    --font1: 'DM Mono', monospace;
+    --font2: 'Inter', sans-serif;
+}
+
+*{
+    font-family: var(--font1);
+}
+body{
+    background-color: var(--cor2);
+}
+div{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: justify;
+    background-color: var(--cor3);
+    padding: 35px 25px;
+    border-radius: 8px;
+    box-shadow: 1.5px 2.5px 2.5px rgba(0, 0, 0, 0.342);
+    padding: 45px;
+    width: 510px;
+}
+input{
+    margin: 5px;
+}
+h3{
+    color: var(--cor1);
+    font-style: italic;    
+}
+
+h1, h2{
+    color: var(--cor5);
+    margin: 20px;
+    width: 100%;
+}
+#inCarac{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: var(--cor6);
+}
+
+#inCarac::-moz-range-thumb {
+    background-color: var(--cor1);
+    width: 12px;
+    height: 20px;
+    
+}
+#inCarac::-moz-range-progress{
+    background-color: var(--cor4);
+    border-radius: 8px;
+    width: 100%;
+}
+#btSenha{
+    width: 100%;
+    background-color: var(--cor1);
+    border-radius: 4px;
+    outline: 3px outset var(--cor4);
+    border: 0px;
+    box-shadow: 0px .5px .5px rgba(0, 0, 0, 0.342);
+    padding: 8px;
+}
+
+#btSenha:hover{
+    background-color: var(--cor4);
+    color: white;
+    transition-duration: 0.5s;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.342);
+    font-weight: bolder;
+}
+
+p{
+    background-color: var(--cor1);
+    border-radius: 4px;
+    box-shadow:0px .5px .5px rgba(0, 0, 0, 0.342);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+p:hover{
+    background-color: var(--cor4);
+    color: white;
+    transition-duration: 1s;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.342);
+    outline: 3px outset  var(--cor5);
+    font-weight: bolder;
+}
+
+button{
+    display: none;
+    width: 100%;
+    background-color: transparent;
+    border: 2.5px outset var(--cor5) ;
+    color: var(--cor5);
+    padding: 10px;
+    border-radius: 4px;
+}
+button:hover{
+    background-color: var(--cor5);
+    color: white;
+    font-style: bolder;
+    transition-duration: 1s;
+}
+
+h4{
+    font-style: italic;
+}

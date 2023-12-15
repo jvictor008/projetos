@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>
+            Gerador de Senha
+        </h1>
+        <h3 id="outCarac"></h3>
+        <input type="range" name="inCarac" id="inCarac" min="5" max="50" onmousemove="mostrarCarac()"> <br>
+        <input type="button" value="Gerar Senha" id="btSenha" onclick="gerarSenha()"> 
+        <h2>Sua senha gerada foi:</h2>
+        <p id="outSenha" onclick="copiarTexto()"></p>
+        <button onclick="copiarTexto()" onclick="esconderTexto()"id="btCopiar">Copiar Texto</button>
+        <h4 id="outCopia"></h4>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

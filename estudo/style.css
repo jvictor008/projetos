@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+:root{
+    --cor1:#7DF0B4;
+    --cor2: #7DF0DB;
+    --cor3: #98F07D;
+    --cor4: #7DF08D;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+header, nav{
+    background-color: var(--cor4);
+    text-align: center;
+}
+
+h1{
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+main{
+    background-color: var(--cor3);
+    margin: 20px;
+    padding: 14px 5px;
+    text-align: center;
+}
+
+input{
+    border-radius: 4px;
+    background-color: transparent;
+    outline: 2px outset var(--cor2);
+    box-shadow: 1.5px 2px 1.5px rgba(0, 0, 0, 0.315);
+}
+
+input,label{
+    margin: 7px;
+}
+
+#button{
+    color: white;
+    width: 40%;
+    background-color: var(--cor1);
+    margin: 15px;
+
+}

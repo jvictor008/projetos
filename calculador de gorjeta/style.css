@@ -1,0 +1,93 @@
+@charset "UTF-8";
+*{
+    text-align: center;
+}
+body{
+    background-color:  #f7dc6f ;
+}
+main{
+    width: 50%;
+    max-width: 300px;
+    height: 50%;
+    border: 1.5px solid black;
+    margin: auto;
+    padding: 15px;
+}
+.number{
+    width: 228px;
+    height: 20px;
+    border-radius: 3px;
+    border: 0px ;
+    margin: 0px 0px;
+    padding: 4.5px 0px;
+}
+.number:focus{
+    outline: 3.5px solid  #34495e ;
+    border: 0px solid transparent;
+    transition-duration: 0.3s;
+}
+.total{
+    width: 253px;
+    background-color:  #b2babb  ;
+    display: inline-block;
+    padding: .6px 0px;
+    border-radius: 3px;
+    height: 25px;
+}
+.total span{
+    margin: 0px 8px;
+}
+.porcentagem{
+    max-width: 233px;
+    margin: 20px;
+    background-color:  #b2babb  ;
+    display: inline-block;
+    padding: .6px 0px;
+    border-radius: 3px;
+}
+.numberTip{
+    width: 66%;
+    height: 153%;
+    border-radius: 3px;
+    border: 0px ;
+    margin: 0px 0px;
+    padding: 4.5px 0px; 
+}
+.numberTip:focus{
+    outline: 3.5px solid  #34495e ;
+    border: 0px solid transparent;
+    transition-duration: 0.3s;
+}
+.tip{
+    background-color:   #b2babb ;
+    display: none;
+    padding: .6px 0px;
+    border-radius: 3px;
+    margin: 9.5px;
+    width: 288.783px;
+}
+.tip span{
+    margin: 0px 8px;
+}
+.numberFinal{
+    width: 51.5%;
+    height: 153%;
+    border-radius: 3px;
+    border: 0px ;
+    margin: 0px 0px;
+    padding: 4.5px 0px;
+}
+.numberFinal:focus{
+    outline: 3.5px solid  #34495e ;
+    border: 0px solid transparent;
+    transition-duration: 0.3s;
+}
+.final{
+    background-color:   #b2babb  ;
+    display: none;
+    padding: .6px 0px;
+    border-radius: 3px;
+}
+.final span{
+    margin: 0px 8px;
+}

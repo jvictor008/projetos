@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="load()">
+    <main>
+        <h1>Tip Calculator</h1>
+        <div class="total">
+            <span>$</span><input type="number" class="number" id="total" placeholder="Total Bill" onfocusout="porcentagem()">
+        </div> <br>
+        <div class="porcentagem">
+            <span>Tip  </span>
+            <input type="range" min="0" max="100" id="range" onclick="porcentagem()"> <span id="porcentagem">
+
+            </span>
+        </div>
+        <hr>
+        <h2>Results</h2>
+        <div class="tip" id="tip">
+            <span>Tip Amount</span> <input type="number" class="numberTip" id="numTip" value="0" disabled>
+        </div>
+        <div class="final" id="final">
+            <span>Total Bill with Tip</span> <input type="number" class="numberFinal" id="numFinal" disabled>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
