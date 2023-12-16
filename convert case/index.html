@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h3>Deixou acidentalmente o caps lock ligado e digitou algo, mas não está com vontade de começar de novo e digitar tudo novamente?</h2>
+        <p>Basta digitar o seu texto e escolher o caso para o qual deseja convertê-lo.</p>
+        <input type="text" name="texto" id="inTexto" value="" size="30" onmousedown="outDados()"><br>
+        <button onclick="setenceCase()">Sentence case</button>
+        <button onclick="lowerCase()">lower case</button>
+        <button onclick="upperCase()">UPPER CASE</button>
+        <button onclick="CapitalizedCase()">Capitalized Case</button>
+        <button onclick="aleternatingCase()">aLtErNaTiNg cAsE</button>
+        <button onclick="CapitalizedCase()">Title Case</button>
+        <button onclick="inverseCase()">Inverse case(esrevni esac)</button> <br>
+        <button class="especial" onclick="copyCase()">Copy</button>
+        <button class="especial" onclick="clearCase()">Clear</button>
+        <p id="outDados"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
