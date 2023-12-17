@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #9d6bee;
+    --cor2: #F0E951;
+    --cor3: #97F051;
+    --cor4: #516AF0;
+}
+
+body{
+    background-color: var(--cor1);
+}
+div{
+    background-color: var(--cor4);
+    display: inline-block;
+    padding: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 40%;
+}
+input{
+    margin: 15px 8px;   
+    background-color: transparent;
+    outline: 2px solid var(--cor2);
+    border-radius: 5px;
+}
+.radio{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+   outline: none;
+    border-radius: 50%;
+  }
+
+label{
+    margin: 0px;
+}
+.inOutro{
+    visibility: hidden;
+    display: inline-block;
+    margin: 0px 10px;
+    
+}
+input.inOutro{
+    width: 150px;
+}

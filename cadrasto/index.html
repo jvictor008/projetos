@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Bem Vindo ao site tal</h1>
+        <p>Insira as informações para realizar o cadastro</p>
+        <label for="inNome">Nome: </label> <input type="text" id="inNome"> <br>
+        <label for="inIdade">Idade: </label> <input type="text" id="inIdade"> <br>
+        <label for="inSexo">Sexo: </label> <input type="radio" id="radMas" name="inSexo" class="radio"> Masculino <input type="radio" id="radFem" name="inSexo" class="radio"> Feminino <br>
+        <label for="inEstado">Estado social: </label> <input type="text" id="inEstado"> <br>
+        <label for="inNatural">Naturalidade: </label> <input type="radio" id="radBrasil" name="inNatural" onfocus="esconderInput()"class="radio">Brasileiro <input type="radio" id="radOutro" name="inNatural" onfocus="revelarInput()" class="radio" >Outro
+        <label for="inOutro" class="inOutro" id="lbOutro">Qual? </label> <input type="text" id="inOutro" class="inOutro" > <br>
+        
+        <button onclick="cadastroDados()">Enviar</button>
+        
+        <p id="outDados"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
