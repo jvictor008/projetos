@@ -10,11 +10,23 @@
     <div>
         <h1>Bem Vindo ao site tal</h1>
         <p>Insira as informações para realizar o cadastro</p>
-        <label for="inNome">Nome: </label> <input type="text" id="inNome"> <br>
-        <label for="inIdade">Idade: </label> <input type="text" id="inIdade"> <br>
-        <label for="inSexo">Sexo: </label> <input type="radio" id="radMas" name="inSexo" class="radio"> Masculino <input type="radio" id="radFem" name="inSexo" class="radio"> Feminino <br>
-        <label for="inEstado">Estado social: </label> <input type="text" id="inEstado"> <br>
-        <label for="inNatural">Naturalidade: </label> <input type="radio" id="radBrasil" name="inNatural" onfocus="esconderInput()"class="radio">Brasileiro <input type="radio" id="radOutro" name="inNatural" onfocus="revelarInput()" class="radio" >Outro
+        <label for="inNome">Nome: </label> <br>
+        <input type="text" id="inNome"> <br>
+        <label for="inIdade">Idade: </label>  <br>
+        <input type="number" id="inIdade" min="5" max="100"> <br>
+        <label for="inSexo">Sexo: </label> <br> 
+        <input type="radio" id="radMas" name="inSexo" class="radio"> Masculino <input type="radio" id="radFem" name="inSexo" class="radio"> Feminino <br>
+        <label for="inEstado">Estado social: </label>  <br>
+        <select name="inEstado" id="inEstado" >
+            <option value="solteiro">solteiro</option>
+            <option value="casado">casado</option>
+            <option value="viúvo">viúvo</option>
+            <option value="separado judicialmente">separado judicialmente</option>
+            <option value="divorciado">divorciado</option>
+            <option value="desquitado ou ignorado">desquitado ou ignorado</option>
+        </select> <br>
+        <label for="inNatural">Naturalidade: </label>  <br>
+        <input type="radio" id="radBrasil" name="inNatural" onfocus="esconderInput()"class="radio">Brasileiro <input type="radio" id="radOutro" name="inNatural" onfocus="revelarInput()" class="radio" >Outro
         <label for="inOutro" class="inOutro" id="lbOutro">Qual? </label> <input type="text" id="inOutro" class="inOutro" > <br>
         
         <button onclick="cadastroDados()">Enviar</button>

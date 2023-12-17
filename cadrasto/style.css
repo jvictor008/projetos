@@ -18,23 +18,39 @@ div{
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    width: 40%;
+    width: 40%; 
+    box-shadow: 1.5px 2px 3px rgba(0, 0, 0, 0.363);
 }
-input{
+input, select{
     margin: 15px 8px;   
     background-color: transparent;
     outline: 2px solid var(--cor2);
     border-radius: 5px;
+    width: 87%;
+    height: 37px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.356);
+}
+input:hover, select:hover, button:hover{
+    background-color: var(--cor1);
+    transition-duration: .5s;
+    outline: 4.5px solid var(--cor2);
+}
+select{
+    appearance: none;
+    overflow:hidden;
 }
 .radio{
     border: 1px solid black;
     width: 20px;
     height: 20px;
     display: inline-block;
-   outline: none;
+    outline: none;
     border-radius: 50%;
+    box-shadow: 0px 0px 0px black;
   }
-
+.radio:hover{
+    outline: none
+}
 label{
     margin: 0px;
 }
@@ -42,8 +58,30 @@ label{
     visibility: hidden;
     display: inline-block;
     margin: 0px 10px;
+    color: var(--cor3);
+    font-weight: bolder;
+  
     
 }
 input.inOutro{
     width: 150px;
+    outline: 2px solid var(--cor3);
+}
+button{
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    color: var(--cor2);
+    outline: 1.5px solid var(--cor2);
+    border: none;
+    border-radius: 4px;
+    margin: 15px;
+    margin-right: 28px;
+    margin-left: 5px;
+}
+span{
+    background-color: gray;
+    display: block;
+    padding: 15px;
+    border-radius: 4px;
 }

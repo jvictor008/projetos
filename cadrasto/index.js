@@ -55,7 +55,7 @@ function cadastroDados(){
 
     }
     if(ideal.idade(inIdade, radMas) == true || ideal.naturalidade(radBrasil, inOutro) == true){
-        outDados.innerHTML= `<h2> Seu cadrasto foi um sucesso!! </h2> <br> Nome: ${inNome} <br> Idade: ${inIdade} <br> Estado Social: ${inEstado}`
+        outDados.innerHTML= `<h2> Seu cadrasto foi um sucesso!! </h2> <span> <br> Nome: ${inNome} <br> Idade: ${inIdade} <br> Estado Social: ${inEstado} </span>` 
     }
     else{
         outDados.innerHTML= `<h2> Seu cadastro foi negado !! </h2> `
