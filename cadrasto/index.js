@@ -7,7 +7,6 @@ function esconderInput(){
     var lbOutro= document.getElementById("lbOutro").style.visibility  = "hidden";
 }
 function cadastroDados(){
-    alert("ok")
     let inNome= document.getElementById("inNome").value
     let inIdade= document.getElementById("inIdade").value
     let radMas= document.getElementById("radMas")

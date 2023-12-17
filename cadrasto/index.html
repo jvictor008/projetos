@@ -8,28 +8,42 @@
 </head>
 <body>
     <div>
-        <h1>Bem Vindo ao site tal</h1>
-        <p>Insira as informações para realizar o cadastro</p>
-        <label for="inNome">Nome: </label> <br>
-        <input type="text" id="inNome"> <br>
-        <label for="inIdade">Idade: </label>  <br>
-        <input type="number" id="inIdade" min="5" max="100"> <br>
-        <label for="inSexo">Sexo: </label> <br> 
-        <input type="radio" id="radMas" name="inSexo" class="radio"> Masculino <input type="radio" id="radFem" name="inSexo" class="radio"> Feminino <br>
-        <label for="inEstado">Estado social: </label>  <br>
-        <select name="inEstado" id="inEstado" >
-            <option value="solteiro">solteiro</option>
-            <option value="casado">casado</option>
-            <option value="viúvo">viúvo</option>
-            <option value="separado judicialmente">separado judicialmente</option>
-            <option value="divorciado">divorciado</option>
-            <option value="desquitado ou ignorado">desquitado ou ignorado</option>
-        </select> <br>
-        <label for="inNatural">Naturalidade: </label>  <br>
-        <input type="radio" id="radBrasil" name="inNatural" onfocus="esconderInput()"class="radio">Brasileiro <input type="radio" id="radOutro" name="inNatural" onfocus="revelarInput()" class="radio" >Outro
-        <label for="inOutro" class="inOutro" id="lbOutro">Qual? </label> <input type="text" id="inOutro" class="inOutro" > <br>
+        <form action="">
+            <h1>Bem Vindo ao site tal</h1>
+            <p>Insira as informações para realizar o cadastro</p>
+            <label for="inNome">Nome: </label> <br>
+            <input type="text" id="inNome" placeholder="Nome" required> <br>
+            <label for="inIdade">Idade: </label>  <br>
+            <input type="number" id="inIdade" min="5" max="100" placeholder="Idade" required > <br>
+            <label for="inSexo">Sexo: </label> <br>
+            <input type="radio" id="radMas" name="inSexo" class="radio" required > Masculino <input type="radio" id="radFem" name="inSexo" class="radio" required > Feminino <br>
+
+            <label for="inEstado">Estado social: </label>  <br>
+            <select name="inEstado" id="inEstado"  >
+                <option value="" id="null"> </option>
+                <option value="solteiro">solteiro</option>
+                <option value="casado">casado</option>
+                <option value="viúvo">viúvo</option>
+                <option value="separado judicialmente">separado judicialmente</option>
+                <option value="divorciado">divorciado</option>
+                <option value="desquitado ou ignorado">desquitado ou ignorado</option>
+            </select> <br>
+
+            <label for="inNatural">Naturalidade: </label>  <br>
+            <input type="radio" id="radBrasil" name="inNatural" onfocus="esconderInput()"class="radio" required >Brasileiro <input type="radio" id="radOutro" name="inNatural" onfocus="revelarInput()" class="radio" required >Outro <br>
+            
+            <label for="inOutro" class="inOutro" id="lbOutro" >Qual? </label>
+             <select name="inOutro" id="inOutro" class="inOutro" required >
+                <option value=""></option>
+                <option value="Uruguai">Uruguai</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Nenhuma das opções">Nenhuma das opções</option>
+            </select> <br> <br>
+            <button onclick="cadastroDados()">Enviar</button>
+        </form>
         
-        <button onclick="cadastroDados()">Enviar</button>
+        
         
         <p id="outDados"></p>
     </div>
