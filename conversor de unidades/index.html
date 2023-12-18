@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conversor de unidades</h1>
+
+    <div id="main">
+        <p>Largura</p>
+       
+       <br>
+
+        
+       <br>
+        
+        <div id="medidas">
+            <div id="inMedidas">
+                <label for="index">De</label> <br>
+                <input type="number" id="inNumero"> <br>
+                <pre>
+<button onclick="calMetro()">Metro</button>
+<button onclick="calQui()">Quilometro</button>
+<button onclick="calCent()">Centimetro</button>
+<button onclick="calMili()">Milimetro</button>
+<button onclick="calMicro()">Micrometro</button>
+<button onclick="calNano()">Nanometro</button>
+<button onclick="calMilha()">Milha</button>
+<button onclick="calJarda()">Jarda</button>
+<button onclick="calPe()">Pé</button>
+<button onclick="calPole()">Polegada</button>
+<button onclick="calAno()">Ano-luz</button>
+                </pre>
+            </div>
+            <div id="outMedidas">
+                <label for="outNumero" class="outLabel">Para</label> <br>
+                <input type="number" id="outNumero" disabled >  <br>
+                <pre>
+<button>Metro <span id="outMetro"></span></button>
+<button>Quilometro <span id="outQui"></span></button>
+<button>Centimetro <span id="outCent"></span></button>
+<button>Milimetro <span id="outMili"></span></button>
+<button>Micrometro <span id="outMicro"></span></button>
+<button>Nanometro <span id="outNano"></span></button>
+<button>Milha <span id="outMilha"></span></button>
+<button>Jarda <span id="outJarda"></span></button>
+<button>Pé <span id="outPe"></span></button>
+<button>Polegada <span id="outPolegada"></span></button>
+<button>Ano-luz <span id="outAno"></span></button>
+                </pre>
+            </div>
+        </div>
+        <p id="outConversao"></p>
+    </div>
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
