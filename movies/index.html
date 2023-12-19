@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Site</h1>
+
+    <input type="text" id="inNome" placeholder="Nome"> <br>
+    <input type="url" id="inUrl" placeholder="Url da imagem"> <br>
+     <label for="inRange">Classificação: </label><input type="range" id="inRange" min="0" max="10" onmousemove="mostrarRanger()"> <p id="outRange"></p>
+    <button onclick="adicionarMovie()">Adicionar</button>
+    <p id="outMovie"></p>
+    <script src="index.js"></script>
+</body>
+</html>
