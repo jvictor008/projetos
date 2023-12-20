@@ -9,7 +9,7 @@ function adicionarMovie(){
        inUrl: inUrl,
        classifiacao: inRange
     }
-    
+    outMovie.style.visibility= "visible"
     outMovie.innerHTML= `<img src="${movies.inUrl}"> <br> <h2>${inNome} &#11088; ${movies.classifiacao}/10</h2> `
 }
 

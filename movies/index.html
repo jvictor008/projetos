@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Site</h1>
+    <div id="nav">
+        <h1>CineAvalia</h1>
+        <h3>O Seu Guia de Filmes Pessoal!</h2>
+        <hr>
+        <p>Você é um amante de cinema em busca das próximas pérolas cinematográficas para assistir? Ou talvez você seja um cinéfilo que quer compartilhar suas opiniões sobre os filmes que já viu? Seja qual for o seu caso, o CineAvalia está aqui para tornar a sua experiência cinematográfica ainda mais envolvente e personalizada.
+        </p>
+        <p>
+            Após assistir a um filme, compartilhe sua opinião dando-lhe uma classificação. Seu feedback é valioso para a comunidade e ajuda outros usuários a encontrarem filmes que correspondam aos seus gostos. Contribua para a construção de uma comunidade vibrante de amantes de cinema!
+        </p>
+    </div>
 
-    <input type="text" id="inNome" placeholder="Nome"> <br>
-    <input type="url" id="inUrl" placeholder="Url da imagem"> <br>
-     <label for="inRange">Classificação: </label><input type="range" id="inRange" min="0" max="10" onmousemove="mostrarRanger()"> <p id="outRange"></p>
-    <button onclick="adicionarMovie()">Adicionar</button>
-    <p id="outMovie"></p>
-    <script src="index.js"></script>
+    <div id="main">
+        <div id="inputs">
+            <input type="text" id="inNome" placeholder="Nome"> <br>
+            <input type="url" id="inUrl" placeholder="Url da imagem"> <br>
+             <label for="inRange">Classificação: </label><input type="range" id="inRange" min="0" max="10" onmousemove="mostrarRanger()"> <p id="outRange"></p>
+            <button onclick="adicionarMovie()">Adicionar</button>
+           
+        </div>
+        <p id="outMovie"></p>
+    </div>
+        <script src="index.js"></script>
+    
 </body>
 </html>
