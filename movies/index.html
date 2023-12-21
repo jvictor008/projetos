@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="nav">
-        <h1>CineAvalia</h1>
+        <h1>CineAvalia &#127909;</h1> 
         <h3>O Seu Guia de Filmes Pessoal!</h2>
         <hr>
         <p>Você é um amante de cinema em busca das próximas pérolas cinematográficas para assistir? Ou talvez você seja um cinéfilo que quer compartilhar suas opiniões sobre os filmes que já viu? Seja qual for o seu caso, o CineAvalia está aqui para tornar a sua experiência cinematográfica ainda mais envolvente e personalizada.
@@ -19,11 +19,13 @@
     </div>
 
     <div id="main">
+        
         <div id="inputs">
+            <h1>Adicione Filmes</h1>
             <input type="text" id="inNome" placeholder="Nome"> <br>
             <input type="url" id="inUrl" placeholder="Url da imagem"> <br>
              <label for="inRange">Classificação: </label><input type="range" id="inRange" min="0" max="10" onmousemove="mostrarRanger()"> <p id="outRange"></p>
-            <button onclick="adicionarMovie()">Adicionar</button>
+            <button onfocus="adicionarMovie()">Adicionar</button>
            
         </div>
         <p id="outMovie"></p>

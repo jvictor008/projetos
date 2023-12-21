@@ -4,7 +4,7 @@
     --cor1: #F5B74E;
     --cor2: #A08B68;
     --cor3: #6D6075;
-    --cor4: #4EF595;
+    --cor4: #4ef5967c;
     --cor5: #B14EF5;
 }
 *{
@@ -14,6 +14,7 @@
 body{
     background-color: var(--cor2);
     overflow-x: hidden;
+    width: 100%;
 }
 #nav{
     position: absolute;
@@ -25,9 +26,14 @@ body{
     display: inline-block;
     padding: 30px;
 }
-#nav h1{
+h1{
     color: var(--cor1);
     font-weight: bold;
+}
+#imgCine{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
 }
 #nav h3{
     font-weight: 500;
@@ -39,29 +45,40 @@ hr{
 }
 #main{
     position: absolute;
-    top: 70%;
-    left: 1%;
+    top: 69%;
+    left: 0%;
     background-color: var(--cor3);
-    padding: 200px 650px;
+    padding: 257px 655px;
     margin-top: 5px;    
 }
 #inputs{
     position: absolute;
-    left: 38%;
+    left: 40%;
     top: 15%;
+}
+#inputs h1{
+    margin-left: 12%;
+    color: var(--cor4);
+    font-weight: bold;
 }
 #inNome, #inUrl{
     width: 300px;
     padding: 10px;
-    margin: 8px;
+    margin: 20px;
     outline: 4px solid var(--cor5);
     border: none;
     border-radius: 3px;
     background-color: transparent;
     color:white;
+    text-align: center;
+}
+
+#inNome:focus, #inUrl:focus{
+    outline: 5px solid var(--cor1);
+    transition-duration: .5s;
 }
 #inNome::placeholder, #inUrl::placeholder{
-    color: white;
+    color: var(--cor5);
     font-weight: bold
 }
 #inRange{
@@ -86,21 +103,43 @@ hr{
     cursor: pointer;
 }
 button{
-    width: 280px;
+    width: 104%;
     padding: 8px;
     border: none;
     outline: 3px solid var(--cor1);
     background-color: transparent;
     color: var(--cor1);
     font-weight: bold;
+    margin-left: -2%;
+    margin-top: 6%;
+}
+button:active{
+    background-color: var(--cor1);
+    color: white;
+}
+#outRange{
+    text-align: center;
+    color: white;
+    background-color: var(--cor4);
+    border-radius: 2px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.308);
+    width: 100%;
 }
 #outMovie{
-    visibility: hidden;
-    background-color: black;
+
+    background-color: var(--cor5);
     width: 100%;
     position: absolute;
-    top: 79%;
+    top: 96%;
     left: 0%;
-    display: block;
-    color: white;
+    display: inline-block;
+    color: black;
+    padding: 40px;
+}
+img{
+    width: 210px;
+    height: 300px;
+}
+#outMovie p{
+    margin-bottom: 40px;
 }
